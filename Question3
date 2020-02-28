@@ -1,0 +1,10 @@
+function largestAdjacentProduct(inputArray){
+  var multiply = 0;
+  for (var i=0;i<inputArray.length;i++){
+    if (inputArray[i]*inputArray[i+1] > multiply){
+      multiply = inputArray[i]*inputArray[i+1];
+    }
+  }
+  return multiply;
+}
+console.log(largestAdjacentProduct([3,6,-2,-5,7,3]))
